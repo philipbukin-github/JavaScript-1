@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#board{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    border: solid 1px black;
+
+}
+#numberLine1,#numberLine2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 98px;
+}
+#alphabetLine1,#alphabetLine2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10%;
+}
+#blackAndWhite{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    border: solid 2px black;
+}
+#alphabetLine1 .cell{
+    width: 10%;
+    height: 100%;
+    font-size: 40px;
+    padding-top: 55px;
+    text-align: center;
+}
+#alphabetLine2 .cell{
+    width: 10%;
+    height: 100%;
+    font-size: 40px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+#numberLine1 .cell{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+#numberLine2 .cell{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.cell_first{
+    width: 12.5%;
+    height: 12.5%;
+    background-color: grey;
+    text-align: center;
+    font-size: 90px;
+}
+.cell_second{
+    width: 12.5%;
+    height: 12.5%;
+    background-color:grey;
+    text-align: center;
+    font-size: 90px;
+}
+.cell_first:nth-child(odd){
+    background-color: white;
+}
+.cell_second:nth-child(even){
+    background-color: white;
+}
